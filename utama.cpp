@@ -5,11 +5,11 @@ using namespace std;
 
 void dMenu(){
 system("cls");
-cout<<"Aplikasi Tampilan Menu"<<"\n";       
-cout<<"1. Menu Pertama"<<"\n";            
-cout<<"2. Menu Kedua"<<"\n";            
-cout<<"3. Menu Ketiga"<<"\n";           
-cout<<"4. Menu Keempat"<<"\n";            
+cout<<"Aplikasi Indeks Massa Tubuh"<<"\n";       
+cout<<"1. Hitung Index Masa Tubuh"<<"\n";            
+cout<<"2. Daftar Penggunaan"<<"\n";            
+cout<<"3. Referensi Index Masa Tubuh"<<"\n";           
+cout<<"4. Tentang Developer"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
 
@@ -19,6 +19,13 @@ void mPertama(string pesan){
 system("cls");
 cout<<"hallo saya menu "<<pesan;
 getch();
+}
+void aDev(){
+  system("cls");
+  cout<<"Our Team\n\n";
+  cout<<"1. Ade < leader >\n";
+  cout<<"2. ilyas\n";
+  getch();
 }
 
 
@@ -43,7 +50,7 @@ do
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    aDev();
     /* code */
     break;  
   case '5':
