@@ -20,6 +20,18 @@ system("cls");
 cout<<"hallo saya menu "<<pesan;
 getch();
 }
+void refBMI(){
+  system("cls");
+  cout<<"Referensi Kategori Idex Massa Tubuh\n\n";
+  cout<<"-> Kurang dari 17,0 termasuk dalam kategori kurus tingkat berat\n";
+  cout<<"-> 17,0-18,4 termasuk dalam kategori kurus tingkat ringan\n";
+  cout<<"-> 18,5-25,0 termasuk dalam kategori normal\n";
+  cout<<"-> 25,1-27,0 termasuk dalam kategori gemuk tingkat ringan\n";
+  cout<<"-> Di atas 27 termasuk dalam kategori gemuk tingkat berat\n";
+  getch();
+}
+
+
 void aDev(){
   system("cls");
   cout<<"Our Team\n\n";
@@ -46,7 +58,7 @@ do
     /* code */ 
     break;  
    case '3':
-    mPertama("ke- tiga");
+    refBMI();
     /* code */
     break;  
    case '4':
