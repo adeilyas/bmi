@@ -1,8 +1,21 @@
 #include <iostream>
 #include <conio.h>
+#include <string>
 using namespace std;
 
+struct imb{          
+  int tinggiBadan;
+  int beratBadan;
+  int jk; 
+  int usia;
+  string nama;
+}; 
+imb pengguna[10];
+int posisi=0;
+string kategImt[5];
 
+
+ 
 void dMenu(){
 system("cls");
 cout<<"Aplikasi Indeks Massa Tubuh"<<"\n";       
@@ -23,11 +36,11 @@ getch();
 void refBMI(){
   system("cls");
   cout<<"Referensi Kategori Idex Massa Tubuh\n\n";
-  cout<<"-> Kurang dari 17,0 termasuk dalam kategori kurus tingkat berat\n";
-  cout<<"-> 17,0-18,4 termasuk dalam kategori kurus tingkat ringan\n";
-  cout<<"-> 18,5-25,0 termasuk dalam kategori normal\n";
-  cout<<"-> 25,1-27,0 termasuk dalam kategori gemuk tingkat ringan\n";
-  cout<<"-> Di atas 27 termasuk dalam kategori gemuk tingkat berat\n";
+  cout<<"-> "<<kategImt[0]<<"\n";
+  cout<<"-> "<<kategImt[1]<<"\n";
+  cout<<"-> "<<kategImt[2]<<"\n";
+  cout<<"-> "<<kategImt[3]<<"\n";
+  cout<<"-> "<<kategImt[4]<<"\n";
   getch();
 }
 
@@ -40,8 +53,15 @@ void aDev(){
   getch();
 }
 
-
+void awal(){
+  kategImt[0]="Kurang dari 17,0 termasuk dalam kategori kurus tingkat berat";
+  kategImt[1]="17,0-18,4 termasuk dalam kategori kurus tingkat ringan";
+  kategImt[2]="18,5-25,0 termasuk dalam kategori normal";
+  kategImt[3]="25,1-27,0 termasuk dalam kategori gemuk tingkat ringan";
+  kategImt[4]="Di atas 27 termasuk dalam kategori gemuk tingkat berat";
+}
 int main() {
+awal();
 char pl;
 do
 {
