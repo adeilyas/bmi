@@ -75,6 +75,10 @@ void awal(){
   kategImt[3]="25.1 - 27.0 termasuk dalam kategori gemuk tingkat ringan";
   kategImt[4]="Di atas 27 termasuk dalam kategori gemuk tingkat berat";
 }
+void infoUsia(int usia){
+if(usia <= 5)
+cout << "\n\nsaat ini aplikasi hanya bisa untuk perhitungan BMI usia dewasa \n";
+}
 
 char hurufBesar(char masuk){
   if(masuk=='l')
@@ -104,7 +108,7 @@ cin >> pengguna[posisi].tinggiBadan;
 cout <<"Jenis Kelamin (L/P): ";
 cin >> jk;
 pengguna[posisi].jk=hurufBesar(jk);
-cout <<"Usia               : ";
+cout <<"Usia        [tahun]: ";
 cin >> pengguna[posisi].usia;
 cout <<"Nama               : ";
 cin >> pengguna[posisi].nama;
@@ -112,8 +116,9 @@ cin >> pengguna[posisi].nama;
 pengguna[posisi].bmi=getBmi(pengguna[posisi].tinggiBadan,pengguna[posisi].beratBadan);
 
 cout <<"Hasil BMI          : "<<pengguna[posisi].bmi;
-cout <<"\n"<<kategImt[cekBmi(pengguna[posisi].bmi)];
+cout <<"\n\n"<<kategImt[cekBmi(pengguna[posisi].bmi)];
 
+infoUsia(pengguna[posisi].usia);
 getch();
 }
 
@@ -152,6 +157,7 @@ for (int i = 0; i <= posisi; i++)
 
 
 }
+
 
 int main() {
 awal();
