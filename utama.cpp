@@ -69,10 +69,10 @@ void aDev(){
 }
 
 void awal(){
-  kategImt[0]="Kurang dari 17,0 termasuk dalam kategori kurus tingkat berat";
-  kategImt[1]="17,0-18,4 termasuk dalam kategori kurus tingkat ringan";
-  kategImt[2]="18,5-25,0 termasuk dalam kategori normal";
-  kategImt[3]="25,1-27,0 termasuk dalam kategori gemuk tingkat ringan";
+  kategImt[0]="Kurang dari 17.0 termasuk dalam kategori kurus tingkat berat";
+  kategImt[1]="17.0 - 18.4 termasuk dalam kategori kurus tingkat ringan";
+  kategImt[2]="18.5 - 25.0 termasuk dalam kategori normal";
+  kategImt[3]="25.1 - 27.0 termasuk dalam kategori gemuk tingkat ringan";
   kategImt[4]="Di atas 27 termasuk dalam kategori gemuk tingkat berat";
 }
 
